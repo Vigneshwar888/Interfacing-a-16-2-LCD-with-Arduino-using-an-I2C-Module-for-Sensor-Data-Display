@@ -93,7 +93,8 @@ void loop()
 }
 ```
 ## Observation
-<img width="899" height="1599" alt="WhatsApp Image 2026-09-23 at 13 20 03" src="https://github.com/user-attachments/assets/8cae9a52-f1ad-449f-aeeb-774c03542994" />
+
+<img width="1442" height="1600" alt="WhatsApp Image 2026-09-24 at 8 18 33 AM" src="https://github.com/user-attachments/assets/53d93d50-f5e2-44ba-9dbb-22f776452fd5" />
 
 ## Result
 
