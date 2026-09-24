@@ -48,8 +48,52 @@ To interface a **16×2 LCD display with Arduino using an I2C module** and displa
 7. The readings are periodically updated.
 
 ## Arduino Program
+```
+#include <Adafruit_LiquidCrystal.h>
 
+Adafruit_LiquidCrystal lcd(0);
+
+int trig = 8;
+int echo = 11;
+
+float distance;
+long duration;
+
+void setup()
+{
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+
+  lcd.begin(16, 2);
+
+  lcd.setCursor(0, 0);
+  lcd.print("Distance =");
+}
+
+void loop()
+{
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
+
+  duration = pulseIn(echo, HIGH);
+
+  distance = duration * 0.0343 / 2;
+
+  lcd.setCursor(0, 1);
+  lcd.print("                ");  // clear only old value
+  lcd.setCursor(0, 1);
+  lcd.print(distance, 1);
+  lcd.print(" cm");
+
+  delay(5000);
+}
+```
 ## Observation
+<img width="899" height="1599" alt="WhatsApp Image 2026-09-23 at 13 20 03" src="https://github.com/user-attachments/assets/8cae9a52-f1ad-449f-aeeb-774c03542994" />
 
 ## Result
 
