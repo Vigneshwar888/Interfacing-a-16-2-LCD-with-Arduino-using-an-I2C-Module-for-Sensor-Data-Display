@@ -94,7 +94,7 @@ void loop()
 ```
 ## Observation
 
-<img width="1442" height="1600" alt="WhatsApp Image 2026-09-24 at 8 18 33 AM" src="https://github.com/user-attachments/assets/53d93d50-f5e2-44ba-9dbb-22f776452fd5" />
+<img width="899" height="1599" alt="WhatsApp Image 2026-09-25 at 10 42 26 AM" src="https://github.com/user-attachments/assets/a7be6858-fb59-4a20-8bc5-87a02b0a1662" />
 
 ## Result
 
